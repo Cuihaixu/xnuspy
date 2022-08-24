@@ -192,7 +192,7 @@ int main(int argc, char **argv, const char **envp){
     }
     
     usleep(200 * 1000);
-
+    
     err = pongo_send_command(pongo_device, "xnuspy-getkernelv\n");
 
     if(err < 0){

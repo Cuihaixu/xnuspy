@@ -1,0 +1,126 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C loader
+ 
+make[1]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/loader'
+clang -g -lusb-1.0 loader.c -o loader
+make[1]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/loader'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C opdump
+make[1]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/opdump'
+clang -g opdump.c -o opdump
+make[1]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/opdump'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C module
+make[1]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C common
+ 
+2022-08-24 11:27:09.974 xcodebuild[8770:89030] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+
+2022-08-24 11:27:09.974 xcodebuild[8770:89030] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+
+2022-08-24 11:27:10.409 xcodebuild[8797:89118] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+
+2022-08-24 11:27:10.409 xcodebuild[8797:89118] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+
+make[2]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/common'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include asm.c -c
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include common.c -c
+make[2]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/common'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C el1
+ 
+make[2]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/el1'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -I/Users/cu/Documents/Reverse/Source/xnuspy/include -e _hook_system_check_sysctlbyname_hook hook_system_check_sysctlbyname_hook.s -o hook_system_check_sysctlbyname_hook
+/Users/cu/Documents/Reverse/Source/xnuspy/opdump/opdump -td -i ./hook_system_check_sysctlbyname_hook -a hook_system_check_sysctlbyname_hook -o hook_system_check_sysctlbyname_hook_instrs.h
+mv hook_system_check_sysctlbyname_hook_instrs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -I/Users/cu/Documents/Reverse/Source/xnuspy/include -e _xnuspy_ctl_tramp xnuspy_ctl_tramp.s -o xnuspy_ctl_tramp
+/Users/cu/Documents/Reverse/Source/xnuspy/opdump/opdump -td -i ./xnuspy_ctl_tramp -a xnuspy_ctl_tramp -o xnuspy_ctl_tramp_instrs.h
+mv xnuspy_ctl_tramp_instrs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C xnuspy_ctl
+ 
+make[3]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/el1/xnuspy_ctl'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum debug.c -c
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum libc.c -c
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum mem.c -c
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum pte.c -c
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum   -c -o ../../common/asm.o ../../common/asm.c
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum tramp.c -c
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum utils.c -c
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum wrappers.c -c
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum -Xlinker -kext  debug.o libc.o mem.o pte.o tramp.o utils.o wrappers.o ../../common/asm.o xnuspy_ctl.c \
+		-o xnuspy_ctl
+make[3]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/el1/xnuspy_ctl'
+ 
+make[2]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/el1'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C el3
+ 
+make[2]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/el3'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -I/Users/cu/Documents/Reverse/Source/xnuspy/include -e _kpp0 kpp.s -o kpp
+/Users/cu/Documents/Reverse/Source/xnuspy/opdump/opdump -td -i ./kpp -a kpp_patches -o /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el3/kpp_patches.h
+ 
+make[2]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/el3'
+ 
+make[2]: *** No rule to make target `/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el3/kpp_patches.h', needed by `kpp.o'.
+make[1]: *** [el3] Error 2
+
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C pf
+ 
+make[2]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/pf'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C 13
+ 
+make[3]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/pf/13'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include pf.c -c
+make[3]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/pf/13'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C 14
+ 
+make[3]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/pf/14'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include pf.c -c
+make[3]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/pf/14'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C 15
+ 
+make[3]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/pf/15'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include pf.c -c
+make[3]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/pf/15'
+ 
+make[2]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module/pf'
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include preboot_hook.c -c
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -Xlinker -kext  preboot_hook.o xnuspy.c -o xnuspy
+ 
+make[1]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/module'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C klog
+ 
+make: *** [module] Error 2
+
+make[1]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/klog'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 klog.c -o klog
+ldid -S../ent.xml ./klog
+ 
+make[1]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/klog'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C example
+ 
+make[1]: Entering directory `/Users/cu/Documents/Reverse/Source/xnuspy/example'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -fno-stack-protector -D_FORTIFY_SOURCE=0 -Wno-deprecated-declarations -I/Users/cu/Documents/Reverse/Source/xnuspy/include open1_hook.c -o open1_hook
+ldid -S../ent.xml ./open1_hook
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -fno-stack-protector -D_FORTIFY_SOURCE=0 -Wno-deprecated-declarations -I/Users/cu/Documents/Reverse/Source/xnuspy/include user_client_monitor.c -o user_client_monitor
+ldid -S../ent.xml ./user_client_monitor
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -fno-stack-protector -D_FORTIFY_SOURCE=0 -Wno-deprecated-declarations -I/Users/cu/Documents/Reverse/Source/xnuspy/include kernel_thread.c -o kernel_thread
+ldid -S../ent.xml ./kernel_thread
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -fno-stack-protector -D_FORTIFY_SOURCE=0 -Wno-deprecated-declarations -I/Users/cu/Documents/Reverse/Source/xnuspy/include kaddr_of_port.c -o kaddr_of_port
+ldid -S../ent.xml ./kaddr_of_port
+ 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -fno-stack-protector -D_FORTIFY_SOURCE=0 -Wno-deprecated-declarations -I/Users/cu/Documents/Reverse/Source/xnuspy/include shmem.c -o shmem
+ldid -S../ent.xml ./shmem
+ 
+make[1]: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy/example'
+make: Leaving directory `/Users/cu/Documents/Reverse/Source/xnuspy'
+ 

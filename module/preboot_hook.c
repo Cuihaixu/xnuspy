@@ -516,6 +516,7 @@ static void process_xnuspy_ctl_image(void *xnuspy_ctl_image){
 
 void (*next_preboot_hook)(void);
 
+//CH: 安装挂钩主逻辑
 void xnuspy_preboot_hook(void){
     anything_missing();
     

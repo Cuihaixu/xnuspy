@@ -78,12 +78,13 @@ static bool getkernelv_callback(xnu_pf_patch_t *patch,
     return true;
 }
 
+//CH: 获取内核版本: 从内核常量段中根据特征 'Darwin Kernel Version' 查找到内核版本 
 static void xnuspy_getkernelv(const char *cmd, char *args){
     xnu_pf_patchset_t *patchset = xnu_pf_patchset_create(XNU_PF_ACCESS_8BIT);
 
-    xnu_pf_range_t *__TEXT___const = xnu_pf_section(mh_execute_header, "__TEXT",
-            "__const");
-
+    // 获取内核常量范围
+    xnu_pf_range_t *__TEXT___const = xnu_pf_section(mh_execute_header, "__TEXT", "__const");
+    // 如果获取异常
     if(!__TEXT___const){
         puts("xnuspy: xnu_pf_section");
         puts("   returned NULL for");
@@ -91,7 +92,7 @@ static void xnuspy_getkernelv(const char *cmd, char *args){
 
         xnuspy_fatal_error();
     }
-
+    
     const char *vers = "Darwin Kernel Version ";
 
     /* hardcoded so clang does not generate ___chkstk_darwin calls */
@@ -194,34 +195,38 @@ static void add_kext_range(struct kextrange **ranges, const char *kext,
     *nkextranges_out = nkextranges + 1;
 }
 
+//CH: 查找所有内核偏移量
 static void xnuspy_prep(const char *cmd, char *args){
-    /* all the patchfinders in pf/pfs.h currently do 32 bit */
+    /* all the patchfinders in pf/pfs.h currently do 32 bit 目前所有查找器都是32位的, 查找器定义在 pf/pfs.h */
     xnu_pf_patchset_t *patchset = xnu_pf_patchset_create(XNU_PF_ACCESS_32BIT);
 
+    
     size_t nkextranges = 0;
     struct kextrange **kextranges = malloc(sizeof(struct kextrange *) * MAXKEXTRANGE);
-
+    /* 遍历所有查找器进行偏移量查找 */
     for(int i=0; !PFS_END(g_all_pfs[i]); i++){
+        // 根据当前主版本获取对应的查找器
         struct pf *pf = &g_all_pfs[i][g_kern_version_major - VERSION_BIAS];
-
+        // 如果查找器没有使用, 则跳过
         if(IS_PF_UNUSED(pf))
             continue;
-
+        
         const char *pf_kext = pf->pf_kext;
         const char *pf_segment = pf->pf_segment;
         const char *pf_section = pf->pf_section;
-
+        
+        // 添加缓存
         if(pf_kext){
             add_kext_range(kextranges, pf_kext, pf_segment, pf_section,
                     &nkextranges);
         }
-
+        // 添加查找器
         xnu_pf_maskmatch(patchset, (char *)pf->pf_name, pf->pf_matches,
                 pf->pf_masks, pf->pf_mmcount, false, pf->pf_callback);
     }
-
     xnu_pf_emit(patchset);
 
+    // 获取代码段范围
     xnu_pf_range_t *__TEXT_EXEC = xnu_pf_segment(mh_execute_header, "__TEXT_EXEC");
     xnu_pf_apply(__TEXT_EXEC, patchset);
 
@@ -230,18 +235,23 @@ static void xnuspy_prep(const char *cmd, char *args){
         xnu_pf_apply(range, patchset);
     }
 
+    // 销毁补丁集合
     xnu_pf_patchset_destroy(patchset);
 }
 
+//CH: 模块入口
 void module_entry(void){
     puts("xnuspy: loaded!");
 
+    // 获取内核偏移
     mh_execute_header = xnu_header();
     kernel_slide = xnu_slide_value(mh_execute_header);
 
-    next_preboot_hook = preboot_hook;
-    preboot_hook = xnuspy_preboot_hook;
+    // 设置预引导函数
+    next_preboot_hook = preboot_hook;   // 记录上一个预引导函数
+    preboot_hook = xnuspy_preboot_hook; // 设置自身的预引导函数
     
+    // 注册获取内核版本和获取全部偏移量命令
     command_register("xnuspy-getkernelv", "get kernel version", xnuspy_getkernelv);
     command_register("xnuspy-prep", "get all offsets", xnuspy_prep);
 }
