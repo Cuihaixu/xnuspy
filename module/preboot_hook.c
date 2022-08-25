@@ -114,6 +114,11 @@ static struct xnuspy_ctl_kernel_symbol {
     { "_vm_map_wire_external", &g_vm_map_wire_external_addr },
     { "_xnuspy_tramp_mem", &g_xnuspy_tramp_mem_addr },
     { "_xnuspy_tramp_mem_end", &g_xnuspy_tramp_mem_end },
+    { "_sysent_addr", &g_sysent_table_addr },
+    { "_vfs_context_current", &g_vfs_context_current},
+    { "_vn_getpath", &g_vn_getpath},
+    { "_vnode_put", &g_vnode_put},
+    { "_vnode_getfromfd", &g_vnode_getfromfd},
 };
 
 static void anything_missing(void){
@@ -517,8 +522,10 @@ static void process_xnuspy_ctl_image(void *xnuspy_ctl_image){
 void (*next_preboot_hook)(void);
 
 void xnuspy_preboot_hook(void){
+    // 环境检查
     anything_missing();
     
+    // 分配内存
     uint64_t xnuspy_tramp_mem_size = PAGE_SIZE * XNUSPY_TRAMP_PAGES;
     void *xnuspy_tramp_mem = alloc_static(xnuspy_tramp_mem_size);
 
@@ -530,7 +537,7 @@ void xnuspy_preboot_hook(void){
 
         xnuspy_fatal_error();
     }
-
+    // 清空数据
     memset(xnuspy_tramp_mem, 0, xnuspy_tramp_mem_size);
 
     /* For every function which gets hooked, a single unconditional
@@ -555,7 +562,6 @@ void xnuspy_preboot_hook(void){
     for(uint32_t i=0; i<__TEXT_EXEC->nsects; i++){
         if(sec64->addr < codestart)
             codestart = sec64->addr;
-
         sec64++;
     }
 

@@ -259,3 +259,12 @@ bool name2oid_and_its_dependencies_finder_14(xnu_pf_patch_t *patch,
 
     return true;
 }
+
+bool vnode_getfromfd_finder_14(xnu_pf_patch_t *patch, void *cacheable_stream) {
+    xnu_pf_disable_patch(patch);
+    uint32_t *opcode_stream = cacheable_stream;
+    uint32_t *vnode_getfromfd = get_branch_dst_ptr(opcode_stream + 6);
+    g_vnode_getfromfd = xnu_ptr_to_va(vnode_getfromfd);
+    puts("xnuspy: found vnode_getfromfd");
+    return true;
+}

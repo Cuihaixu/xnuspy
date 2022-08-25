@@ -1,0 +1,2238 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C loader
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Thu Aug 25 10:40:47 2022
+
+# Variables
+
+ 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
+# environment
+MonkeyDevDeviceIP = 
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
+# makefile (from `Makefile', line 9)
+TARGET = loader
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+MonkeyDevPath = /opt/MonkeyDev
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/loader
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 2)
+CFLAGS = -g
+# environment
+THEOS_DEVICE_IP = localhost -p 2222
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 11)
+SOURCES = loader.c
+# environment
+RP = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+VIRTUALENVWRAPPER_PYTHON = /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 3)
+LDFLAGS = -lusb-1.0
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/cu
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = cu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /Users/cu/.oh-my-zsh
+# environment
+WORKON_HOME = /Users/cu/Programs/PythonEnvs
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+ 
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 1)
+CC = clang
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = cu
+# makefile
+.DEFAULT_GOAL := loader
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# environment
+VIRTUALENVWRAPPER_WORKON_CD = 1
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+VIRTUAL_ENV_DISABLE_PROMPT = 1
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 1
+# environment
+THEOS = /opt/theos
+# environment
+LANG = C
+# environment
+VSCODE_PID = 3116
+# variable set hash-table stats:
+# Load=84/1024=8%, Rehash=0, Collisions=2/113=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 6993208): 6 files, no impossibilities.
+
+# 6 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+loader: loader.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 15:23:44
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 14):
+	$(CC) $(CFLAGS) $(LDFLAGS) $(SOURCES) -o $(TARGET)
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+loader.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 15:21:48
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=5/1024=0%, Rehash=0, Collisions=0/18=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+ 
+
+# Finished Make data base on Thu Aug 25 10:40:47 2022
+
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C module
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C common
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Thu Aug 25 10:40:47 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
+# environment
+MonkeyDevDeviceIP = 
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+MonkeyDevPath = /opt/MonkeyDev
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 3.81
+# makefile
+CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/module/common
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include
+# environment
+THEOS_DEVICE_IP = localhost -p 2222
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+RP = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+ 
+# environment
+PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+VIRTUALENVWRAPPER_PYTHON = /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
+# environment
+SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/cu
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = cu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /Users/cu/.oh-my-zsh
+# environment
+WORKON_HOME = /Users/cu/Programs/PythonEnvs
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# environment
+CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+# environment
+OPDUMP = /Users/cu/Documents/Reverse/Source/xnuspy/opdump/opdump
+# environment
+USER = cu
+# makefile
+.DEFAULT_GOAL := all
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# environment
+VIRTUALENVWRAPPER_WORKON_CD = 1
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+VIRTUAL_ENV_DISABLE_PROMPT = 1
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 2
+# environment
+THEOS = /opt/theos
+# environment
+LANG = C
+# environment
+VSCODE_PID = 3116
+# variable set hash-table stats:
+# Load=83/1024=8%, Rehash=0, Collisions=3/111=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+ 
+# Directories
+
+# . (device 16777232, inode 6993214): 7 files, no impossibilities.
+
+# 7 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all: asm.o common.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+common.o: common.c /Users/cu/Documents/Reverse/Source/xnuspy/include/common/common.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 14:00:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 7):
+	$(CC) $(CFLAGS) common.c -c
+	
+
+# Not a target:
+asm.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/common/common.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+common.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 14:00:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 4):
+	$(CC) $(CFLAGS) asm.c -c
+	
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/28=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Thu Aug 25 10:40:47 2022
+
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C el1
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C xnuspy_ctl
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Thu Aug 25 10:40:47 2022
+
+# Variables
+
+ 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
+# environment
+MonkeyDevDeviceIP = 
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 4)
+EXTERNAL_DEPS = $(RP)/include/xnuspy/el1/externs.h $(RP)/include/xnuspy/xnuspy_ctl.h $(RP)/include/xnuspy/xnuspy_structs.h
+# environment
+MonkeyDevPath = /opt/MonkeyDev
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 3.81
+# makefile
+CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/module/el1/xnuspy_ctl
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 8)
+CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum
+# environment
+THEOS_DEVICE_IP = localhost -p 2222
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 1)
+OBJECT_FILES = debug.o libc.o mem.o pte.o tramp.o utils.o wrappers.o
+# environment
+RP = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# makefile (from `Makefile', line 3)
+ASM_DEP = ../../common/asm.o
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+VIRTUALENVWRAPPER_PYTHON = /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 22)
+LDFLAGS = -Xlinker -kext 
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
+# environment
+SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/cu
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = cu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /Users/cu/.oh-my-zsh
+# environment
+WORKON_HOME = /Users/cu/Programs/PythonEnvs
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# environment
+CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+# environment
+OPDUMP = /Users/cu/Documents/Reverse/Source/xnuspy/opdump/opdump
+# environment
+USER = cu
+# makefile
+.DEFAULT_GOAL := all
+# environment
+ 
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# environment
+VIRTUALENVWRAPPER_WORKON_CD = 1
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+VIRTUAL_ENV_DISABLE_PROMPT = 1
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 3
+# environment
+THEOS = /opt/theos
+# environment
+LANG = C
+# environment
+VSCODE_PID = 3116
+# variable set hash-table stats:
+# Load=87/1024=8%, Rehash=0, Collisions=4/161=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 6993222): 20 files, no impossibilities.
+
+# 20 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/tramp.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/wrappers.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: debug.o libc.o mem.o pte.o tramp.o utils.o wrappers.o xnuspy_ctl
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+wrappers.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+xnuspy_ctl.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 18:36:05
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+tramp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+libc.o: libc.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/libc.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 18:19:32
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 32):
+	$(CC) $(CFLAGS) libc.c -c
+	
+
+debug.o: debug.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/debug.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 18:19:32
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 29):
+	$(CC) $(CFLAGS) debug.c -c
+ 
+	
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 17:41:56
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../common/asm.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 14:00:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/debug.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+pte.o: pte.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/pte.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 18:19:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 38):
+	$(CC) $(CFLAGS) pte.c -c
+	
+
+mem.o: mem.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/mem.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 18:19:32
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	$(CC) $(CFLAGS) mem.c -c
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+libc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/utils.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+debug.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/libc.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+utils.o: utils.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/utils.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 18:19:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 44):
+	$(CC) $(CFLAGS) utils.c -c
+	
+
+wrappers.o: wrappers.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/wrappers.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 18:19:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 47):
+	$(CC) $(CFLAGS) wrappers.c -c
+	
+
+# Not a target:
+pte.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+xnuspy_ctl: debug.o libc.o mem.o pte.o tramp.o utils.o wrappers.o ../../common/asm.o /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h xnuspy_ctl.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 18:36:21
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 50):
+	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJECT_FILES) $(ASM_DEP) xnuspy_ctl.c \
+	-o xnuspy_ctl
+	
+
+# Not a target:
+mem.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+tramp.o: tramp.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/tramp.h ../../common/asm.o /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-24 18:19:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
+#  commands to execute (from `Makefile', line 41):
+	$(CC) $(CFLAGS) tramp.c -c
+	
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/mem.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/pte.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=31/1024=3%, Rehash=0, Collisions=0/99=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Thu Aug 25 10:40:47 2022
+
+ 
+
+# Make data base, printed on Thu Aug 25 10:40:47 2022
+
+# Variables
+
+ 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
+# environment
+MonkeyDevDeviceIP = 
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+MonkeyDevPath = /opt/MonkeyDev
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 3.81
+# makefile
+CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/module/el1
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include
+# environment
+THEOS_DEVICE_IP = localhost -p 2222
+# makefile (from `Makefile', line 1)
+ASM_INSTR_HDRS = $(patsubst %.s, $(RP)/include/xnuspy/el1/%_instrs.h, $(wildcard *.s))
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+RP = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+VIRTUALENVWRAPPER_PYTHON = /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
+# environment
+SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/cu
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = cu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /Users/cu/.oh-my-zsh
+# environment
+WORKON_HOME = /Users/cu/Programs/PythonEnvs
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 2)
+TARGET_DIRS = xnuspy_ctl
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# environment
+CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+# environment
+OPDUMP = /Users/cu/Documents/Reverse/Source/xnuspy/opdump/opdump
+# environment
+USER = cu
+# makefile
+.DEFAULT_GOAL := all
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+ 
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# environment
+VIRTUALENVWRAPPER_WORKON_CD = 1
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+VIRTUAL_ENV_DISABLE_PROMPT = 1
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 2
+# environment
+THEOS = /opt/theos
+# environment
+LANG = C
+# environment
+VSCODE_PID = 3116
+# variable set hash-table stats:
+# Load=85/1024=8%, Rehash=0, Collisions=7/123=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 6993218): 11 files, no impossibilities.
+# /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy (device 16777232, inode 6993189): 6 files, no impossibilities so far.
+# /Users/cu/Documents/Reverse/Source/xnuspy/include/asm (device 16777232, inode 6993172): 3 files, no impossibilities so far.
+
+# 20 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/%_instrs.h: %.s %.h /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm_support.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_cache.h
+#  commands to execute (from `Makefile', line 8):
+	$(eval OUTFILE = $(subst .s,,$<))
+	$(CC) -arch arm64 -isysroot $(SDK) -I$(RP)/include -e _$(OUTFILE) $< -o $(OUTFILE)
+	$(OPDUMP) -td -i ./$(OUTFILE) -a $(OUTFILE) -o $(OUTFILE)_instrs.h
+	mv $(OUTFILE)_instrs.h $(RP)/include/xnuspy/el1/
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+hook_system_check_sysctlbyname_hook.s:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm_support.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hook_system_check_sysctlbyname_hook_instrs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/xnuspy_ctl_tramp_instrs.h target_dirs
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+.PHONY: target_dirs xnuspy_ctl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+hook_system_check_sysctlbyname_hook.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hook_system_check_sysctlbyname_hook_instrs.h: hook_system_check_sysctlbyname_hook.s hook_system_check_sysctlbyname_hook.h /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm_support.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_cache.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `hook_system_check_sysctlbyname_hook'
+#  Last modified 2022-08-24 14:00:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 8):
+	$(eval OUTFILE = $(subst .s,,$<))
+	$(CC) -arch arm64 -isysroot $(SDK) -I$(RP)/include -e _$(OUTFILE) $< -o $(OUTFILE)
+	$(OPDUMP) -td -i ./$(OUTFILE) -a $(OUTFILE) -o $(OUTFILE)_instrs.h
+	mv $(OUTFILE)_instrs.h $(RP)/include/xnuspy/el1/
+	
+
+# Not a target:
+xnuspy_ctl_tramp.s:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+target_dirs: xnuspy_ctl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+xnuspy_ctl_tramp.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_cache.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/xnuspy_ctl_tramp_instrs.h: xnuspy_ctl_tramp.s xnuspy_ctl_tramp.h /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm_support.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_cache.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `xnuspy_ctl_tramp'
+#  Last modified 2022-08-24 14:00:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 8):
+	$(eval OUTFILE = $(subst .s,,$<))
+	$(CC) -arch arm64 -isysroot $(SDK) -I$(RP)/include -e _$(OUTFILE) $< -o $(OUTFILE)
+	$(OPDUMP) -td -i ./$(OUTFILE) -a $(OUTFILE) -o $(OUTFILE)_instrs.h
+	mv $(OUTFILE)_instrs.h $(RP)/include/xnuspy/el1/
+	
+
+xnuspy_ctl:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# @ := xnuspy_ctl
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/13=15%
+#  commands to execute (from `Makefile', line 18):
+	$(MAKE) -C $@
+	
+
+# files hash-table stats:
+# Load=15/1024=1%, Rehash=0, Collisions=0/52=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Thu Aug 25 10:40:47 2022
+
+ 
+make[1]: *** [el1] Error 1
+
+
+# Make data base, printed on Thu Aug 25 10:40:47 2022
+
+# Variables
+
+ 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
+# environment
+MonkeyDevDeviceIP = 
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+MonkeyDevPath = /opt/MonkeyDev
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/module
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 5)
+CFLAGS = -isysroot $(SDK) -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I$(RP)/include
+# environment
+THEOS_DEVICE_IP = localhost -p 2222
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 25)
+OBJECT_FILES = $(shell find ./common ./pf ./el3 -type f -name "*.o")
+# environment
+RP = /Users/cu/Documents/Reverse/Source/xnuspy
+# makefile (from `Makefile', line 26)
+INSTR_FILES = $(shell find $(RP)/include/xnuspy/el1 -type f -name "*_instrs.h")
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+VIRTUALENVWRAPPER_PYTHON = /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 6)
+LDFLAGS = -Xlinker -kext
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
+# makefile (from `Makefile', line 1)
+SDK = $(shell xcrun --sdk iphoneos --show-sdk-path)
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/cu
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = cu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /Users/cu/.oh-my-zsh
+# environment
+WORKON_HOME = /Users/cu/Programs/PythonEnvs
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 14)
+TARGET_DIRS = common el1 el3 pf
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 2)
+ 
+CC = $(shell xcrun --sdk $(SDK) --find clang)
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = cu
+# makefile
+.DEFAULT_GOAL := all
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# environment
+VIRTUALENVWRAPPER_WORKON_CD = 1
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+VIRTUAL_ENV_DISABLE_PROMPT = 1
+# makefile (from `Makefile', line 7)
+OPDUMP = $(RP)/opdump/opdump
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 1
+# environment
+THEOS = /opt/theos
+# environment
+LANG = C
+# environment
+VSCODE_PID = 3116
+# variable set hash-table stats:
+# Load=87/1024=8%, Rehash=0, Collisions=9/172=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 6993211): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+pf/14/pf.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pf:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 23):
+	$(MAKE) -C $@
+	
+
+all: common el1 el3 pf preboot_hook.o xnuspy
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/32=0%
+
+common:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# @ := common
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/25=8%
+#  commands to execute (from `Makefile', line 23):
+	$(MAKE) -C $@
+	
+
+.PHONY: target_dirs common el1 el3 pf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+el3/kpp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+el1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := el1
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/25=8%
+ 
+#  commands to execute (from `Makefile', line 23):
+	$(MAKE) -C $@
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 11:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hook_system_check_sysctlbyname_hook_instrs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+preboot_hook.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/common/common.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+common/common.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/pf/pfs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+target_dirs: common el1 el3 pf
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+xnuspy: common/asm.o common/common.o pf/15/pf.o pf/13/pf.o pf/14/pf.o el3/kpp.o xnuspy.c preboot_hook.o /Users/cu/Documents/Reverse/Source/xnuspy/include/common/common.h /Users/cu/Documents/Reverse/Source/xnuspy/include/pf/offsets.h /Users/cu/Documents/Reverse/Source/xnuspy/include/pf/pfs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 43):
+	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJECT_FILES) preboot_hook.o xnuspy.c -o xnuspy
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pf/13/pf.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/xnuspy_ctl_tramp_instrs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pf/15/pf.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/pf/offsets.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+el3:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 23):
+	$(MAKE) -C $@
+	
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/common/preboot_hook.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+xnuspy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+common/asm.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+preboot_hook.o: /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hook_system_check_sysctlbyname_hook_instrs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/xnuspy_ctl_tramp_instrs.h preboot_hook.c /Users/cu/Documents/Reverse/Source/xnuspy/include/common/preboot_hook.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 35):
+	$(CC) $(CFLAGS) preboot_hook.c -c
+	
+
+# files hash-table stats:
+# Load=28/1024=3%, Rehash=0, Collisions=0/76=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Thu Aug 25 10:40:47 2022
+
+ 
+make: *** [module] Error 2
+
+
+# Make data base, printed on Thu Aug 25 10:40:47 2022
+
+# Variables
+
+ 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
+# environment
+MonkeyDevDeviceIP = 
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+MonkeyDevPath = /opt/MonkeyDev
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+THEOS_DEVICE_IP = localhost -p 2222
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 1)
+RP = $(realpath $(shell pwd))
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+VIRTUALENVWRAPPER_PYTHON = /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/cu/Documents/Reverse/Source/xnuspy
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/cu
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = cu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /Users/cu/.oh-my-zsh
+# environment
+WORKON_HOME = /Users/cu/Programs/PythonEnvs
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 5)
+TARGET_DIRS = loader module 
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+ 
+# environment
+USER = cu
+# makefile
+.DEFAULT_GOAL := all
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# environment
+VIRTUALENVWRAPPER_WORKON_CD = 1
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+VIRTUAL_ENV_DISABLE_PROMPT = 1
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+THEOS = /opt/theos
+# environment
+LANG = C
+# environment
+VSCODE_PID = 3116
+# variable set hash-table stats:
+# Load=81/1024=8%, Rehash=0, Collisions=6/121=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 6993087): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all: loader module
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/12=0%
+
+.PHONY: all loader module
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 15:23:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+module:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := module
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  commands to execute (from `Makefile', line 12):
+	$(MAKE) -C $@
+	
+ 
+
+loader:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# @ := loader
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  commands to execute (from `Makefile', line 12):
+	$(MAKE) -C $@
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/28=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Thu Aug 25 10:40:47 2022
+
+ 

@@ -454,8 +454,35 @@ enum {
      */
     UVTOPHYS,
 
+    /* void vfs_context_current(void)
+     *
+     * 获取当前虚拟文件系统上下文
+     */
+    VFS_CONTEXT_CURRENT,
+
+    /* int vn_getpath(struct vnode *vp, char *pathbuf, int *len)
+     *
+     * 从虚拟文件节点中获取路径
+     */
+    VN_GET_PATH,
+
+    /* int vnode_put(vnode_t vp);
+     *
+     * 释放vnode
+     */
+    VNODE_PUT,
+
+    /* int vnode_getfromfd(vfs_context_t ctx, int fd, vnode_t *vpp);
+     *
+     * 通过fd反查虚拟文件节点对象
+     */ 
+    VNODE_GET_FROM_FD,
+
+    /* 系统调用表地址 (未偏移) */
+    SYSENT_ADDR,
+
 #ifdef XNUSPY_PRIVATE
-    MAX_CACHE = UVTOPHYS,
+    MAX_CACHE = SYSENT_ADDR,
 #endif
 };
 

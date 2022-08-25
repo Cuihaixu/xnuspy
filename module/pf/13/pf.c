@@ -88,6 +88,11 @@ uint64_t g_vm_allocate_external_addr = 0;
 uint64_t g_vm_map_deallocate_addr = 0;
 uint64_t g_offsetof_struct_vm_map_refcnt = 0;
 uint64_t g_IOLog_addr = 0;
+uint64_t g_sysent_table_addr = 0;
+uint64_t g_vfs_context_current = 0;
+uint64_t g_vn_getpath = 0;
+uint64_t g_vnode_put = 0;
+uint64_t g_vnode_getfromfd = 0;
 
 /* Confirmed working on all kernels 13.0 - 15.0 */
 bool sysent_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream){
@@ -1375,5 +1380,68 @@ bool lck_mtx_lock_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream){
 
     puts("xnuspy: found lck_mtx_lock");
 
+    return true;
+}
+
+bool sysent_table_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
+    uint32_t *opcode_stream = cacheable_stream;
+    
+    uint32_t instr_limit = 10;
+    while((*opcode_stream & 0x9f000000) != 0x90000000){
+        if(instr_limit-- == 0)
+            return false;
+        opcode_stream++;
+    }
+    /* make sure this is actually sysent. to do this, we can check if 
+     * the first entry is the indirect system call */
+    uint64_t maybe_sysent = get_pc_rel_target(opcode_stream);
+
+    if(*(uint64_t *)maybe_sysent != 0 &&
+            *(uint64_t *)(maybe_sysent + 0x8) == 0 &&
+            *(uint32_t *)(maybe_sysent + 0x10) == 1 &&
+            *(uint16_t *)(maybe_sysent + 0x14) == 0 &&
+            *(uint16_t *)(maybe_sysent + 0x16) == 0){
+        g_sysent_table_addr = xnu_ptr_to_va((void *)maybe_sysent);
+        xnu_pf_disable_patch(patch);
+        puts("xnuspy: found sysent_table");
+        return true;
+    }
+    puts("xnuspy: not found sysent_table");
+    return false;
+}
+
+bool vfs_context_current_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
+    xnu_pf_disable_patch(patch);
+    uint32_t *opcode_stream = cacheable_stream;
+    uint32_t *vfs_context_current = get_branch_dst_ptr(opcode_stream + 1);
+    g_vfs_context_current = xnu_ptr_to_va(vfs_context_current);
+    puts("xnuspy: found vfs_context_current()");
+    return true;
+}
+
+bool vn_getpath_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
+    xnu_pf_disable_patch(patch);
+    uint32_t *opcode_stream = cacheable_stream;
+    uint32_t *vn_getpath = get_branch_dst_ptr(opcode_stream + 6);
+    g_vn_getpath = xnu_ptr_to_va(vn_getpath);
+    puts("xnuspy: found vn_getpath");
+    return true;
+}
+
+bool vnode_put_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
+    xnu_pf_disable_patch(patch);
+    uint32_t *opcode_stream = cacheable_stream;
+    uint32_t *vnode_put = get_branch_dst_ptr(opcode_stream + 3);
+    g_vnode_put = xnu_ptr_to_va(vnode_put);
+    puts("xnuspy: found vnode_put");
+    return true;
+}
+
+bool vnode_getfromfd_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
+    xnu_pf_disable_patch(patch);
+    uint32_t *opcode_stream = cacheable_stream;
+    uint32_t *vnode_getfromfd = get_branch_dst_ptr(opcode_stream + 6);
+    g_vnode_getfromfd = xnu_ptr_to_va(vnode_getfromfd);
+    puts("xnuspy: found vnode_getfromfd");
     return true;
 }

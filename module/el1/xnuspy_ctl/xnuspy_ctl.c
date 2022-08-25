@@ -145,6 +145,12 @@ MARK_AS_KERNEL_OFFSET kern_return_t (*vm_map_wire_external)(void *map,
 MARK_AS_KERNEL_OFFSET struct xnuspy_tramp *xnuspy_tramp_mem;
 MARK_AS_KERNEL_OFFSET struct xnuspy_tramp *xnuspy_tramp_mem_end;
 
+MARK_AS_KERNEL_OFFSET uint64_t sysent_addr;
+MARK_AS_KERNEL_OFFSET void (*vfs_context_current)(void);
+MARK_AS_KERNEL_OFFSET int (*vn_getpath)(void *vp, char *pathbuf, int *len);
+MARK_AS_KERNEL_OFFSET int (*vnode_put)(void *vp);
+MARK_AS_KERNEL_OFFSET int (*vnode_getfromfd)(void *ctx, int fd, void *vpp);
+
 lck_rw_t *xnuspy_rw_lck = NULL;
 
 /* I cannot reference count the xnuspy_tramp structs because I am unable
@@ -1372,6 +1378,21 @@ static int xnuspy_cache_read(enum xnuspy_cache_id which,
             break;
         case UVTOPHYS:
             what = uvtophys;
+            break;
+        case SYSENT_ADDR:
+            what = (void *)sysent_addr;
+            break;
+        case VFS_CONTEXT_CURRENT:
+            what = vfs_context_current;
+            break;
+        case VN_GET_PATH:
+            what = vn_getpath;
+            break;
+        case VNODE_PUT:
+            what = vnode_put;
+            break;
+        case VNODE_GET_FROM_FD:
+            what = vnode_getfromfd;
             break;
         default:
             return EINVAL;

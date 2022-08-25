@@ -52,5 +52,10 @@ bool vm_allocate_external_finder_13(xnu_pf_patch_t *, void *);
 bool vm_map_deallocate_offsetof_vm_map_refcnt_finder_13(xnu_pf_patch_t *, void *);
 bool IOLog_finder_13(xnu_pf_patch_t *, void *);
 bool lck_mtx_lock_finder_13(xnu_pf_patch_t *, void *);
+bool sysent_table_finder_13(xnu_pf_patch_t *, void *);
+bool vfs_context_current_finder_13(xnu_pf_patch_t *, void *);
+bool vn_getpath_finder_13(xnu_pf_patch_t *, void *);
+bool vnode_put_finder_13(xnu_pf_patch_t *, void *);
+bool vnode_getfromfd_finder_13(xnu_pf_patch_t *, void *);
 
 #endif

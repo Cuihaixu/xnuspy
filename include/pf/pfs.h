@@ -2043,7 +2043,7 @@ struct pf g_all_pfs[MAXPF][NUM_SUPPORTED_VERSIONS] = {
                 0xffffffff,     /* match exactly */
                 0xffffffff,     /* match exactly */
                 0xffffffff,     /* match exactly */
-                0xff00001f,     /* ignore immediate */
+                0xff00001f,     /* ignore immediate */ 
             }),
             4, strncmp_finder_13, "__TEXT_EXEC"),
         PF_DECL32("strcmp finder iOS 15",
@@ -2389,6 +2389,179 @@ struct pf g_all_pfs[MAXPF][NUM_SUPPORTED_VERSIONS] = {
             "com.apple.filesystems.apfs", "__TEXT_EXEC", NULL),
         PF_UNUSED,
     },
+    {
+        PF_DECL32("sysent_table finder iOS 13",
+            LISTIZE({
+                0x794096b6, /* LDRH W22, [X21,#0x4A] */
+                0x321d07e8  /* MOV W8, #0x18 */
+            }),
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff      /* match exactly */
+            }),
+            2, sysent_table_finder_13, "__TEXT_EXEC"),
+        PF_DECL32("sysent_table finder iOS 14",
+            LISTIZE({
+                0x794096b6, /* LDRH W22, [X21,#0x4A] */
+                0x52800308  /* MOV W8, #0x18 */
+            }),
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff      /* match exactly */
+            }),
+            2, sysent_table_finder_13, "__TEXT_EXEC"),
+        PF_DECL32("sysent_table finder iOS 15",
+            LISTIZE({
+                0x794096b6, /* LDRH W22, [X21,#0x4A] */
+                0x52800308  /* MOV W8, #0x18 */
+            }),
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff      /* match exactly */
+            }),
+            2, sysent_table_finder_13, "__TEXT_EXEC"),
+    },
+    {
+        PF_DECL_FULL("vfs_context_current finder iOS 13",
+            LISTIZE({
+                0x91102277,     /* ADD X23, X19, #0x408 */
+            }),
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+            }),
+            1, XNU_PF_ACCESS_32BIT, vfs_context_current_finder_13,
+            "com.apple.driver.AppleSEPManager", "__text", NULL),
+        PF_DECL_FULL("vfs_context_current finder iOS 14",
+            LISTIZE({
+                0x91102277,     /* ADD X23, X19, #0x408 */
+            }),
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+            }),
+            1, XNU_PF_ACCESS_32BIT, vfs_context_current_finder_13,
+            "com.apple.driver.AppleSEPManager", "__text", NULL),
+        PF_UNUSED
+    },
+    {
+        PF_DECL32("vn_getpath finder iOS 13",
+            LISTIZE({
+                0xb9000fe8,      /* STR W8, [SP,#0x20+len] */
+                0xf9420808,      /* LDR X8, [X0,#0x410] */
+                0x91002013,      /* ADD X19, X0, #8 */
+            }), 
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+            }),
+            3, vn_getpath_finder_13, "__TEXT_EXEC"),
+        PF_DECL_FULL("vn_getpath finder iOS 14",
+            LISTIZE({
+                0xb9000fe8,      /* STR W8, [SP,#0x20+len] */
+                0xf9420808,      /* LDR X8, [X0,#0x410] */
+                0x91002013,      /* ADD X19, X0, #8 */
+            }),
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+            }),
+            3, XNU_PF_ACCESS_32BIT, vn_getpath_finder_13,
+            "com.apple.driver.AppleMobileFileIntegrity", "__text", NULL),
+        PF_UNUSED
+    },
+    {
+        PF_DECL32("vn_getpath finder iOS 13",
+            LISTIZE({ 
+                0x528002d3,      /* MOV W19, #0x16 */
+                0xf9400fe0,      /* LDR X0, [SP,#0x18] */
+                0xb4000040,      /* CBZ X0, loc_FFFFFFF008C0FB0C */
+            }), 
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+            }),
+            3, vnode_put_finder_13, "__TEXT_EXEC"),
+        PF_DECL_FULL("vn_getpath finder iOS 14",
+            LISTIZE({
+                0x528002d3,      /* MOV W19, #0x16 */
+                0xf9400fe0,      /* LDR X0, [SP,#0x18] */
+                0xb4000040,      /* CBZ X0, loc_FFFFFFF008C0FB0C */
+            }),
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+            }),
+            3, XNU_PF_ACCESS_32BIT, vnode_put_finder_13,
+            "com.apple.security.sandbox", "__text", NULL),
+        PF_UNUSED
+    },
+    {
+        PF_DECL32("vnode_getfromfd finder iOS 13",
+            LISTIZE({ 
+                0x7100041f,      /* CMP W0, #1 */
+                0x5400040b,      /* B.LT loc_FFFFFFF008F9BD84 */
+                0x9102A000,      /* ADD Xn, Xn, #0xA8 */
+                0xaa0003e1,      /* MOV X1, X0 */
+            }), 
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xfffffc00,     /* ignore rd rn */
+                0xffffffff,     /* match exactly */
+            }),
+            4, vnode_getfromfd_finder_13, "__TEXT_EXEC"),
+        PF_DECL_FULL("vnode_getfromfd finder iOS 14",
+            LISTIZE({
+                0x7100041f,      /* CMP W0, #1 */
+                0x5400040b,      /* B.LT loc_FFFFFFF008F9BD84 */
+                0xaa0003e1,      /* MOV X1, X0 */
+                0x9102A000,      /* ADD Xn, Xn, #0xA8 */
+            }),
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xfffffc00,     /* ignore rd rn */
+            }),
+            4, XNU_PF_ACCESS_32BIT, vnode_getfromfd_finder_13,
+            "com.apple.driver.DiskImages.FileBackingStore", "__text", NULL),
+        PF_UNUSED
+    },
+    // {
+    //     PF_DECL32("vnode_getfromfd finder iOS 13",
+    //         LISTIZE({ 
+    //             0x7100041f,      /* CMP W0, #1 */
+    //             0x5400040b,      /* B.LT loc_FFFFFFF008F9BD84 */
+    //             0x9102a296,      /* ADD X22, X20, #0xA8 */
+    //             0xaa0003e1,      /* MOV X1, X0 */
+    //         }), 
+    //         LISTIZE({
+    //             0xffffffff,     /* match exactly */
+    //             0xffffffff,     /* match exactly */
+    //             0xfffffc00,     /* ignore rd rn */
+    //             0xffffffff,     /* match exactly */
+    //         }),
+    //         4, vnode_getfromfd_finder_13, "__TEXT_EXEC"),
+    //     PF_DECL_FULL("vnode_getfromfd finder iOS 14",
+    //         LISTIZE({
+    //             0x7100041f,      /* CMP W0, #1 */
+    //             0x5400040b,      /* B.LT loc_FFFFFFF008F9BD84 */
+    //             0xaa0003e1,      /* MOV X1, X0 */
+    //             0x9102a296,      /* ADD X22, X20, #0xA8 */
+    //         }),
+    //         LISTIZE({
+    //             0xffffffff,     /* match exactly */
+    //             0xffffffff,     /* match exactly */
+    //             0xffffffff,     /* match exactly */
+    //             0xfffffc00,     /* ignore rd rn */
+    //         }),
+    //         4, XNU_PF_ACCESS_32BIT, vnode_getfromfd_finder_13,
+    //         "com.apple.driver.DiskImages.FileBackingStore", "__text", NULL),
+    //     PF_UNUSED
+    // },
     { PF_END, PF_END, PF_END },
 };
 

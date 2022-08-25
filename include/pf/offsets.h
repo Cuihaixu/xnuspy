@@ -106,4 +106,10 @@ extern uint64_t g_IOLog_addr;
 extern uint64_t g_proc_ref_addr;
 extern uint64_t g_proc_rele_addr;
 
+extern uint64_t g_sysent_table_addr;
+extern uint64_t g_vfs_context_current;
+extern uint64_t g_vn_getpath;
+extern uint64_t g_vnode_put;
+extern uint64_t g_vnode_getfromfd;
+
 #endif
