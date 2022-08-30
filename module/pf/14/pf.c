@@ -273,7 +273,6 @@ bool task_policy_finder_14(xnu_pf_patch_t *patch, void *cacheable_stream) {
      xnu_pf_disable_patch(patch);
     uint32_t *opcode_stream = cacheable_stream;
     uint32_t instr_limit = 30;
-    // FF C3 00 D1
     while(*opcode_stream != 0xd100c3ff){
         if(instr_limit-- == 0) {
             return false;

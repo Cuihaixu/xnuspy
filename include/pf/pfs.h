@@ -2531,8 +2531,20 @@ struct pf g_all_pfs[MAXPF][NUM_SUPPORTED_VERSIONS] = {
         PF_UNUSED
     },
     {
-        PF_UNUSED,
-        // PF_UNUSED,
+        PF_DECL32("task_policy finder iOS 13",
+            LISTIZE({ 
+                0x52800000,      /* MOV W0, #0 */
+                0x39403fe8,      /* LDRB W8, [SP,#0x20+var_11] */
+                0x350002e8,      /* CBNZ W8, loc_FFFFFFF00827D764 */               
+                0xaa1303e0,      /* MOV X0, X19 */
+            }), 
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+            }),
+            4, task_policy_finder_13, "__TEXT_EXEC"),
         PF_DECL_FULL("task_policy finder iOS 14",
             LISTIZE({
                 0x94000000,      /* BL xxxxxxxx */
