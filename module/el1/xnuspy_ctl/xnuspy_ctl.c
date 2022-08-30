@@ -150,6 +150,7 @@ MARK_AS_KERNEL_OFFSET void (*vfs_context_current)(void);
 MARK_AS_KERNEL_OFFSET int (*vn_getpath)(void *vp, char *pathbuf, int *len);
 MARK_AS_KERNEL_OFFSET int (*vnode_put)(void *vp);
 MARK_AS_KERNEL_OFFSET int (*vnode_getfromfd)(void *ctx, int fd, void *vpp);
+MARK_AS_KERNEL_OFFSET int64_t (*kern_task_policy)(void *ucred, void *ident);
 
 lck_rw_t *xnuspy_rw_lck = NULL;
 
@@ -1393,6 +1394,9 @@ static int xnuspy_cache_read(enum xnuspy_cache_id which,
             break;
         case VNODE_GET_FROM_FD:
             what = vnode_getfromfd;
+            break;
+        case TASK_POLICY:
+            what = kern_task_policy;
             break;
         default:
             return EINVAL;

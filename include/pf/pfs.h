@@ -2530,38 +2530,33 @@ struct pf g_all_pfs[MAXPF][NUM_SUPPORTED_VERSIONS] = {
             "com.apple.driver.DiskImages.FileBackingStore", "__text", NULL),
         PF_UNUSED
     },
-    // {
-    //     PF_DECL32("vnode_getfromfd finder iOS 13",
-    //         LISTIZE({ 
-    //             0x7100041f,      /* CMP W0, #1 */
-    //             0x5400040b,      /* B.LT loc_FFFFFFF008F9BD84 */
-    //             0x9102a296,      /* ADD X22, X20, #0xA8 */
-    //             0xaa0003e1,      /* MOV X1, X0 */
-    //         }), 
-    //         LISTIZE({
-    //             0xffffffff,     /* match exactly */
-    //             0xffffffff,     /* match exactly */
-    //             0xfffffc00,     /* ignore rd rn */
-    //             0xffffffff,     /* match exactly */
-    //         }),
-    //         4, vnode_getfromfd_finder_13, "__TEXT_EXEC"),
-    //     PF_DECL_FULL("vnode_getfromfd finder iOS 14",
-    //         LISTIZE({
-    //             0x7100041f,      /* CMP W0, #1 */
-    //             0x5400040b,      /* B.LT loc_FFFFFFF008F9BD84 */
-    //             0xaa0003e1,      /* MOV X1, X0 */
-    //             0x9102a296,      /* ADD X22, X20, #0xA8 */
-    //         }),
-    //         LISTIZE({
-    //             0xffffffff,     /* match exactly */
-    //             0xffffffff,     /* match exactly */
-    //             0xffffffff,     /* match exactly */
-    //             0xfffffc00,     /* ignore rd rn */
-    //         }),
-    //         4, XNU_PF_ACCESS_32BIT, vnode_getfromfd_finder_13,
-    //         "com.apple.driver.DiskImages.FileBackingStore", "__text", NULL),
-    //     PF_UNUSED
-    // },
+    {
+        PF_UNUSED,
+        // PF_UNUSED,
+        PF_DECL_FULL("task_policy finder iOS 14",
+            LISTIZE({
+                0x94000000,      /* BL xxxxxxxx */
+                0xb4000180,      /* CBZ X0, loc_FFFFFFF008309370 */
+                0xaa0003f3,      /* MOV X19, X0 */
+                0x90000001,      /* ADRP X1, 0x0 */
+                0x91000021,      /* ADD X1, X1, #0 */
+                0x91003fe2,      /* ADD X2, SP, #0x20+var_11 */
+                0x94000000,      /* BL xxxxxxxx */
+
+            }),
+            LISTIZE({
+                0xFC000000,     /* ignore num */
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
+                0x9F00001F,     /* ignore num */
+                0xFFC003FF,     /* ignore num */
+                0xffffffff,     /* match exactly */
+                0xFC000000,     /* ignore num */
+            }),
+            7, XNU_PF_ACCESS_32BIT, task_policy_finder_14,
+            "com.apple.driver.AppleMobileFileIntegrity", "__TEXT_EXEC", NULL),
+        PF_UNUSED,
+    },
     { PF_END, PF_END, PF_END },
 };
 

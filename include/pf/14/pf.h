@@ -14,5 +14,6 @@ bool lck_rw_alloc_init_finder_14(xnu_pf_patch_t *, void *);
 bool ktrr_lockdown_patcher_14(xnu_pf_patch_t *, void *);
 bool amcc_ctrr_lockdown_patcher_14(xnu_pf_patch_t *, void *);
 bool name2oid_and_its_dependencies_finder_14(xnu_pf_patch_t *, void *);
+bool task_policy_finder_14(xnu_pf_patch_t *, void *);
 
 #endif

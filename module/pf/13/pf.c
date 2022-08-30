@@ -93,6 +93,7 @@ uint64_t g_vfs_context_current = 0;
 uint64_t g_vn_getpath = 0;
 uint64_t g_vnode_put = 0;
 uint64_t g_vnode_getfromfd = 0;
+uint64_t g_task_policy = 0;
 
 /* Confirmed working on all kernels 13.0 - 15.0 */
 bool sysent_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream){
@@ -1443,5 +1444,9 @@ bool vnode_getfromfd_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
     uint32_t *vnode_getfromfd = get_branch_dst_ptr(opcode_stream + 6);
     g_vnode_getfromfd = xnu_ptr_to_va(vnode_getfromfd);
     puts("xnuspy: found vnode_getfromfd");
+    return true;
+}
+
+bool task_policy_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
     return true;
 }

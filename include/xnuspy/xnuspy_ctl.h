@@ -478,6 +478,10 @@ enum {
      */ 
     VNODE_GET_FROM_FD,
 
+    /* int64_t task_policy(void *ucred, void *ident)
+     */
+    TASK_POLICY,
+
     /* 系统调用表地址 (未偏移) */
     SYSENT_ADDR,
 

@@ -18,11 +18,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Aug 25 10:40:47 2022
+# Make data base, printed on Tue Aug 30 10:46:29 2022
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -31,6 +30,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
 MonkeyDevDeviceIP = 
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
 # makefile (from `Makefile', line 9)
@@ -66,7 +67,8 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_CWD = /
+ 
+VSCODE_CWD = /Users/cu/Documents/Reverse/Source/xnuspy
 # environment
 PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # environment
@@ -84,7 +86,7 @@ LDFLAGS = -lusb-1.0
 # environment
 VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -102,11 +104,13 @@ HOME = /Users/cu
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
+VSCODE_CLI = 1
+# environment
 VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = cu
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /Users/cu/.oh-my-zsh
 # environment
@@ -114,12 +118,15 @@ WORKON_HOME = /Users/cu/Programs/PythonEnvs
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
- 
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
 # makefile (from `Makefile', line 1)
 CC = clang
 # default
@@ -129,11 +136,15 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := loader
 # environment
+TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -151,7 +162,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+# environment
+LC_TERMINAL_VERSION = 3.4.16
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -159,7 +174,11 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
+ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
 # environment
@@ -170,6 +189,8 @@ MAKEFILES :=
 VIRTUALENVWRAPPER_WORKON_CD = 1
 # automatic
 <F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
 # environment
 VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
 # environment
@@ -191,9 +212,11 @@ THEOS = /opt/theos
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3116
+TERM = xterm-256color
+# environment
+VSCODE_PID = 4919
 # variable set hash-table stats:
-# Load=84/1024=8%, Rehash=0, Collisions=2/113=2%
+# Load=96/1024=9%, Rehash=0, Collisions=3/125=2%
 
 # Pattern-specific Variable Values
 
@@ -201,8 +224,9 @@ VSCODE_PID = 3116
 
 # Directories
 
-# . (device 16777232, inode 6993208): 6 files, no impossibilities.
+# . (device 16777231, inode 6993208): 6 files, no impossibilities.
 
+ 
 # 6 files, no impossibilities in 1 directories.
 
 # Implicit Rules
@@ -264,9 +288,8 @@ loader.c:
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
- 
 
-# Finished Make data base on Thu Aug 25 10:40:47 2022
+# Finished Make data base on Tue Aug 30 10:46:29 2022
 
  
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C module
@@ -290,10 +313,11 @@ loader.c:
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Aug 25 10:40:47 2022
+# Make data base, printed on Tue Aug 30 10:46:30 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -302,6 +326,8 @@ loader.c:
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
 MonkeyDevDeviceIP = 
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
 # automatic
@@ -335,8 +361,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_CWD = /
- 
+VSCODE_CWD = /Users/cu/Documents/Reverse/Source/xnuspy
 # environment
 PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # environment
@@ -354,7 +379,7 @@ VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
 SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -372,11 +397,13 @@ HOME = /Users/cu
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
+VSCODE_CLI = 1
+# environment
 VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = cu
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /Users/cu/.oh-my-zsh
 # environment
@@ -385,10 +412,14 @@ WORKON_HOME = /Users/cu/Programs/PythonEnvs
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
 # environment
 CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 # environment
@@ -398,11 +429,15 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := all
 # environment
+TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -420,7 +455,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+# environment
+LC_TERMINAL_VERSION = 3.4.16
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -428,7 +467,12 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
+ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 HOMEBREW_REPOSITORY = /opt/homebrew
+ 
+# environment
+COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
 # environment
@@ -439,6 +483,8 @@ MAKEFILES :=
 VIRTUALENVWRAPPER_WORKON_CD = 1
 # automatic
 <F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
 # environment
 VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
 # environment
@@ -460,18 +506,19 @@ THEOS = /opt/theos
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3116
+TERM = xterm-256color
+# environment
+VSCODE_PID = 4919
 # variable set hash-table stats:
-# Load=83/1024=8%, Rehash=0, Collisions=3/111=3%
+# Load=95/1024=9%, Rehash=0, Collisions=4/123=3%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
 
- 
 # Directories
 
-# . (device 16777232, inode 6993214): 7 files, no impossibilities.
+# . (device 16777231, inode 6993214): 7 files, no impossibilities.
 
 # 7 files, no impossibilities in 1 directories.
 
@@ -556,6 +603,7 @@ common.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
 #  Implicit rule search has not been done.
@@ -581,7 +629,7 @@ asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Aug 25 10:40:47 2022
+# Finished Make data base on Tue Aug 30 10:46:30 2022
 
  
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C el1
@@ -605,7 +653,7 @@ asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Aug 25 10:40:47 2022
+# Make data base, printed on Tue Aug 30 10:46:30 2022
 
 # Variables
 
@@ -618,6 +666,8 @@ asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
 MonkeyDevDeviceIP = 
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
 # automatic
@@ -655,7 +705,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_CWD = /
+VSCODE_CWD = /Users/cu/Documents/Reverse/Source/xnuspy
 # environment
 PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # makefile (from `Makefile', line 3)
@@ -677,7 +727,7 @@ VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
 SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -695,11 +745,13 @@ HOME = /Users/cu
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
+VSCODE_CLI = 1
+# environment
 VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = cu
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /Users/cu/.oh-my-zsh
 # environment
@@ -708,10 +760,14 @@ WORKON_HOME = /Users/cu/Programs/PythonEnvs
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
 # environment
 CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 # environment
@@ -721,12 +777,15 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := all
 # environment
- 
+TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -742,9 +801,14 @@ MAKEFLAGS = Rrqp
 # environment
 MFLAGS = -Rrqp
 # automatic
+ 
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+# environment
+LC_TERMINAL_VERSION = 3.4.16
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -752,7 +816,11 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
+ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
 # environment
@@ -763,6 +831,8 @@ MAKEFILES :=
 VIRTUALENVWRAPPER_WORKON_CD = 1
 # automatic
 <F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
 # environment
 VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
 # environment
@@ -784,9 +854,11 @@ THEOS = /opt/theos
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3116
+TERM = xterm-256color
+# environment
+VSCODE_PID = 4919
 # variable set hash-table stats:
-# Load=87/1024=8%, Rehash=0, Collisions=4/161=2%
+# Load=99/1024=10%, Rehash=0, Collisions=5/173=3%
 
 # Pattern-specific Variable Values
 
@@ -794,7 +866,7 @@ VSCODE_PID = 3116
 
 # Directories
 
-# . (device 16777232, inode 6993222): 20 files, no impossibilities.
+# . (device 16777231, inode 6993222): 20 files, no impossibilities.
 
 # 20 files, no impossibilities in 1 directories.
 
@@ -851,7 +923,7 @@ wrappers.c:
 # Not a target:
 xnuspy_ctl.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-24 18:36:05
+#  Last modified 2022-08-29 16:13:25
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -883,7 +955,7 @@ Makefile:
 
 libc.o: libc.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/libc.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 18:19:32
+#  Last modified 2022-08-29 16:07:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -894,20 +966,19 @@ libc.o: libc.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/libc
 
 debug.o: debug.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/debug.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 18:19:32
+#  Last modified 2022-08-29 16:07:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 29):
 	$(CC) $(CFLAGS) debug.c -c
- 
 	
 
 # Not a target:
 /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-24 17:41:56
+#  Last modified 2022-08-29 15:29:44
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -933,7 +1004,7 @@ debug.o: debug.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/de
 
 pte.o: pte.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/pte.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 18:19:33
+#  Last modified 2022-08-29 16:07:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -944,7 +1015,7 @@ pte.o: pte.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/pte.h 
 
 mem.o: mem.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/mem.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 18:19:32
+#  Last modified 2022-08-29 16:07:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -995,9 +1066,10 @@ debug.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 utils.o: utils.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/utils.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 18:19:33
+#  Last modified 2022-08-29 16:07:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1008,7 +1080,7 @@ utils.o: utils.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/ut
 
 wrappers.o: wrappers.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/wrappers.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 18:19:33
+#  Last modified 2022-08-29 16:07:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1028,7 +1100,7 @@ pte.c:
 
 xnuspy_ctl: debug.o libc.o mem.o pte.o tramp.o utils.o wrappers.o ../../common/asm.o /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h xnuspy_ctl.c
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 18:36:21
+#  Last modified 2022-08-29 16:13:46
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1049,12 +1121,11 @@ mem.c:
 
 tramp.o: tramp.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/tramp.h ../../common/asm.o /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 18:19:33
+#  Last modified 2022-08-29 16:07:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
- 
 #  commands to execute (from `Makefile', line 41):
 	$(CC) $(CFLAGS) tramp.c -c
 	
@@ -1108,15 +1179,14 @@ tramp.o: tramp.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/tr
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Aug 25 10:40:47 2022
+# Finished Make data base on Tue Aug 30 10:46:30 2022
 
  
 
-# Make data base, printed on Thu Aug 25 10:40:47 2022
+# Make data base, printed on Tue Aug 30 10:46:30 2022
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -1125,6 +1195,8 @@ tramp.o: tramp.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/tr
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
 MonkeyDevDeviceIP = 
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
 # automatic
@@ -1160,7 +1232,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_CWD = /
+VSCODE_CWD = /Users/cu/Documents/Reverse/Source/xnuspy
 # environment
 PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # environment
@@ -1178,7 +1250,7 @@ VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
 SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -1196,11 +1268,13 @@ HOME = /Users/cu
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
+VSCODE_CLI = 1
+# environment
 VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = cu
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /Users/cu/.oh-my-zsh
 # environment
@@ -1211,10 +1285,14 @@ WORKON_HOME = /Users/cu/Programs/PythonEnvs
 TARGET_DIRS = xnuspy_ctl
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
 # environment
 CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 # environment
@@ -1224,12 +1302,15 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := all
 # environment
+TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
- 
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -1247,7 +1328,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+# environment
+LC_TERMINAL_VERSION = 3.4.16
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -1255,7 +1340,11 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
+ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
 # environment
@@ -1266,6 +1355,8 @@ MAKEFILES :=
 VIRTUALENVWRAPPER_WORKON_CD = 1
 # automatic
 <F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
 # environment
 VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
 # environment
@@ -1287,9 +1378,11 @@ THEOS = /opt/theos
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3116
+TERM = xterm-256color
+# environment
+VSCODE_PID = 4919
 # variable set hash-table stats:
-# Load=85/1024=8%, Rehash=0, Collisions=7/123=6%
+# Load=97/1024=9%, Rehash=0, Collisions=8/135=6%
 
 # Pattern-specific Variable Values
 
@@ -1297,9 +1390,9 @@ VSCODE_PID = 3116
 
 # Directories
 
-# . (device 16777232, inode 6993218): 11 files, no impossibilities.
-# /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy (device 16777232, inode 6993189): 6 files, no impossibilities so far.
-# /Users/cu/Documents/Reverse/Source/xnuspy/include/asm (device 16777232, inode 6993172): 3 files, no impossibilities so far.
+# . (device 16777231, inode 6993218): 11 files, no impossibilities.
+# /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy (device 16777231, inode 6993189): 6 files, no impossibilities so far.
+# /Users/cu/Documents/Reverse/Source/xnuspy/include/asm (device 16777231, inode 6993172): 3 files, no impossibilities so far.
 
 # 20 files, no impossibilities in 3 directories.
 
@@ -1335,6 +1428,7 @@ hook_system_check_sysctlbyname_hook.s:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 all: /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hook_system_check_sysctlbyname_hook_instrs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/xnuspy_ctl_tramp_instrs.h target_dirs
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -1379,7 +1473,6 @@ Makefile:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 8):
 	$(eval OUTFILE = $(subst .s,,$<))
@@ -1487,13 +1580,13 @@ xnuspy_ctl:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Aug 25 10:40:47 2022
+# Finished Make data base on Tue Aug 30 10:46:30 2022
 
  
 make[1]: *** [el1] Error 1
 
 
-# Make data base, printed on Thu Aug 25 10:40:47 2022
+# Make data base, printed on Tue Aug 30 10:46:30 2022
 
 # Variables
 
@@ -1506,6 +1599,8 @@ make[1]: *** [el1] Error 1
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
 MonkeyDevDeviceIP = 
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
 # automatic
@@ -1541,7 +1636,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_CWD = /
+VSCODE_CWD = /Users/cu/Documents/Reverse/Source/xnuspy
 # environment
 PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # environment
@@ -1561,7 +1656,7 @@ VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # makefile (from `Makefile', line 1)
 SDK = $(shell xcrun --sdk iphoneos --show-sdk-path)
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -1579,11 +1674,13 @@ HOME = /Users/cu
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
+VSCODE_CLI = 1
+# environment
 VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = cu
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /Users/cu/.oh-my-zsh
 # environment
@@ -1594,12 +1691,15 @@ WORKON_HOME = /Users/cu/Programs/PythonEnvs
 TARGET_DIRS = common el1 el3 pf
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
 # makefile (from `Makefile', line 2)
- 
 CC = $(shell xcrun --sdk $(SDK) --find clang)
 # default
 MAKE_VERSION := 3.81
@@ -1608,11 +1708,16 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := all
 # environment
+TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 LESS = -R
 # automatic
+ 
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -1630,7 +1735,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+# environment
+LC_TERMINAL_VERSION = 3.4.16
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -1638,7 +1747,11 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
+ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
 # environment
@@ -1649,6 +1762,8 @@ MAKEFILES :=
 VIRTUALENVWRAPPER_WORKON_CD = 1
 # automatic
 <F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
 # environment
 VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
 # environment
@@ -1672,9 +1787,11 @@ THEOS = /opt/theos
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3116
+TERM = xterm-256color
+# environment
+VSCODE_PID = 4919
 # variable set hash-table stats:
-# Load=87/1024=8%, Rehash=0, Collisions=9/172=5%
+# Load=99/1024=10%, Rehash=0, Collisions=10/184=5%
 
 # Pattern-specific Variable Values
 
@@ -1682,7 +1799,7 @@ VSCODE_PID = 3116
 
 # Directories
 
-# . (device 16777232, inode 6993211): 13 files, no impossibilities.
+# . (device 16777231, inode 6993211): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -1779,8 +1896,8 @@ el1:
 # ? := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=2/25=8%
- 
 #  commands to execute (from `Makefile', line 23):
+ 
 	$(MAKE) -C $@
 	
 
@@ -1933,18 +2050,18 @@ preboot_hook.o: /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hoo
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Aug 25 10:40:47 2022
+# Finished Make data base on Tue Aug 30 10:46:30 2022
 
  
 make: *** [module] Error 2
 
 
-# Make data base, printed on Thu Aug 25 10:40:47 2022
+# Make data base, printed on Tue Aug 30 10:46:30 2022
 
 # Variables
 
- 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -1952,6 +2069,8 @@ make: *** [module] Error 2
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
 MonkeyDevDeviceIP = 
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
 # automatic
@@ -1981,7 +2100,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_CWD = /
+VSCODE_CWD = /Users/cu/Documents/Reverse/Source/xnuspy
 # environment
 PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # environment
@@ -1997,7 +2116,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZA6n1DcRo8/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -2015,11 +2134,13 @@ HOME = /Users/cu
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
+VSCODE_CLI = 1
+# environment
 VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = cu
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /Users/cu/.oh-my-zsh
 # environment
@@ -2030,25 +2151,32 @@ WORKON_HOME = /Users/cu/Programs/PythonEnvs
 TARGET_DIRS = loader module 
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
-# default
-MAKECMDGOALS := all
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
 # default
 MAKE_VERSION := 3.81
- 
 # environment
 USER = cu
 # makefile
 .DEFAULT_GOAL := all
+# default
+MAKECMDGOALS := all
+# environment
+TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
 # environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -2066,7 +2194,12 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068
+ 
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+# environment
+LC_TERMINAL_VERSION = 3.4.16
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -2074,7 +2207,11 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
+ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+# environment
 HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
 # environment
@@ -2085,6 +2222,8 @@ MAKEFILES :=
 VIRTUALENVWRAPPER_WORKON_CD = 1
 # automatic
 <F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
 # environment
 VIRTUALENVWRAPPER_SCRIPT = /Library/Frameworks/Python.framework/Versions/3.10/bin/virtualenvwrapper.sh
 # environment
@@ -2106,9 +2245,11 @@ THEOS = /opt/theos
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3116
+TERM = xterm-256color
+# environment
+VSCODE_PID = 4919
 # variable set hash-table stats:
-# Load=81/1024=8%, Rehash=0, Collisions=6/121=5%
+# Load=93/1024=9%, Rehash=0, Collisions=9/133=7%
 
 # Pattern-specific Variable Values
 
@@ -2116,7 +2257,7 @@ VSCODE_PID = 3116
 
 # Directories
 
-# . (device 16777232, inode 6993087): 10 files, no impossibilities.
+# . (device 16777231, inode 6993087): 10 files, no impossibilities.
 
 # 10 files, no impossibilities in 1 directories.
 
@@ -2183,7 +2324,6 @@ module:
 #  commands to execute (from `Makefile', line 12):
 	$(MAKE) -C $@
 	
- 
 
 loader:
 #  Phony target (prerequisite of .PHONY).
@@ -2222,6 +2362,7 @@ loader:
 
 # files hash-table stats:
 # Load=7/1024=1%, Rehash=0, Collisions=0/28=0%
+ 
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -2233,6 +2374,6 @@ loader:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Aug 25 10:40:47 2022
+# Finished Make data base on Tue Aug 30 10:46:30 2022
 
  
