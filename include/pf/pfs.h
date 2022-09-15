@@ -2530,45 +2530,45 @@ struct pf g_all_pfs[MAXPF][NUM_SUPPORTED_VERSIONS] = {
             "com.apple.driver.DiskImages.FileBackingStore", "__text", NULL),
         PF_UNUSED
     },
-    {
-        PF_DECL32("task_policy finder iOS 13",
-            LISTIZE({ 
-                0x52800000,      /* MOV W0, #0 */
-                0x39403fe8,      /* LDRB W8, [SP,#0x20+var_11] */
-                0x350002e8,      /* CBNZ W8, loc_FFFFFFF00827D764 */               
-                0xaa1303e0,      /* MOV X0, X19 */
-            }), 
-            LISTIZE({
-                0xffffffff,     /* match exactly */
-                0xffffffff,     /* match exactly */
-                0xffffffff,     /* match exactly */
-                0xffffffff,     /* match exactly */
-            }),
-            4, task_policy_finder_13, "__TEXT_EXEC"),
-        PF_DECL_FULL("task_policy finder iOS 14",
-            LISTIZE({
-                0x94000000,      /* BL xxxxxxxx */
-                0xb4000180,      /* CBZ X0, loc_FFFFFFF008309370 */
-                0xaa0003f3,      /* MOV X19, X0 */
-                0x90000001,      /* ADRP X1, 0x0 */
-                0x91000021,      /* ADD X1, X1, #0 */
-                0x91003fe2,      /* ADD X2, SP, #0x20+var_11 */
-                0x94000000,      /* BL xxxxxxxx */
+    // {
+    //     PF_DECL32("task_policy finder iOS 13",
+    //         LISTIZE({ 
+    //             0x52800000,      /* MOV W0, #0 */
+    //             0x39403fe8,      /* LDRB W8, [SP,#0x20+var_11] */
+    //             0x350002e8,      /* CBNZ W8, loc_FFFFFFF00827D764 */               
+    //             0xaa1303e0,      /* MOV X0, X19 */
+    //         }), 
+    //         LISTIZE({
+    //             0xffffffff,     /* match exactly */
+    //             0xffffffff,     /* match exactly */
+    //             0xffffffff,     /* match exactly */
+    //             0xffffffff,     /* match exactly */
+    //         }),
+    //         4, task_policy_finder_13, "__TEXT_EXEC"),
+    //     PF_DECL_FULL("task_policy finder iOS 14",
+    //         LISTIZE({
+    //             0x94000000,      /* BL xxxxxxxx */
+    //             0xb4000180,      /* CBZ X0, loc_FFFFFFF008309370 */
+    //             0xaa0003f3,      /* MOV X19, X0 */
+    //             0x90000001,      /* ADRP X1, 0x0 */
+    //             0x91000021,      /* ADD X1, X1, #0 */
+    //             0x91003fe2,      /* ADD X2, SP, #0x20+var_11 */
+    //             0x94000000,      /* BL xxxxxxxx */
 
-            }),
-            LISTIZE({
-                0xFC000000,     /* ignore num */
-                0xffffffff,     /* match exactly */
-                0xffffffff,     /* match exactly */
-                0x9F00001F,     /* ignore num */
-                0xFFC003FF,     /* ignore num */
-                0xffffffff,     /* match exactly */
-                0xFC000000,     /* ignore num */
-            }),
-            7, XNU_PF_ACCESS_32BIT, task_policy_finder_14,
-            "com.apple.driver.AppleMobileFileIntegrity", "__TEXT_EXEC", NULL),
-        PF_UNUSED,
-    },
+    //         }),
+    //         LISTIZE({
+    //             0xFC000000,     /* ignore num */
+    //             0xffffffff,     /* match exactly */
+    //             0xffffffff,     /* match exactly */
+    //             0x9F00001F,     /* ignore num */
+    //             0xFFC003FF,     /* ignore num */
+    //             0xffffffff,     /* match exactly */
+    //             0xFC000000,     /* ignore num */
+    //         }),
+    //         7, XNU_PF_ACCESS_32BIT, task_policy_finder_14,
+    //         "com.apple.driver.AppleMobileFileIntegrity", "__TEXT_EXEC", NULL),
+    //     PF_UNUSED,
+    // },
     { PF_END, PF_END, PF_END },
 };
 

@@ -119,7 +119,7 @@ static struct xnuspy_ctl_kernel_symbol {
     { "_vn_getpath", &g_vn_getpath},
     { "_vnode_put", &g_vnode_put},
     { "_vnode_getfromfd", &g_vnode_getfromfd},
-    { "_kern_task_policy", &g_task_policy},
+    // { "_kern_task_policy", &g_task_policy},
 };
 
 static void anything_missing(void){

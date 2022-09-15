@@ -269,22 +269,22 @@ bool vnode_getfromfd_finder_14(xnu_pf_patch_t *patch, void *cacheable_stream) {
     return true;
 }
 
-bool task_policy_finder_14(xnu_pf_patch_t *patch, void *cacheable_stream) {
-     xnu_pf_disable_patch(patch);
-    uint32_t *opcode_stream = cacheable_stream;
-    uint32_t instr_limit = 30;
-    while(*opcode_stream != 0xd100c3ff){
-        if(instr_limit-- == 0) {
-            return false;
-        }
-        opcode_stream--;
-    }
-    g_task_policy = xnu_ptr_to_va(opcode_stream);
-    opcode_stream--;
-    if (*opcode_stream == 0xd503237f)
-    {
-        g_task_policy = xnu_ptr_to_va(opcode_stream);
-    }
-    puts("xnuspy: found task_policy");
-    return true;
-}
+// bool task_policy_finder_14(xnu_pf_patch_t *patch, void *cacheable_stream) {
+//      xnu_pf_disable_patch(patch);
+//     uint32_t *opcode_stream = cacheable_stream;
+//     uint32_t instr_limit = 30;
+//     while(*opcode_stream != 0xd100c3ff){
+//         if(instr_limit-- == 0) {
+//             return false;
+//         }
+//         opcode_stream--;
+//     }
+//     g_task_policy = xnu_ptr_to_va(opcode_stream);
+//     opcode_stream--;
+//     if (*opcode_stream == 0xd503237f)
+//     {
+//         g_task_policy = xnu_ptr_to_va(opcode_stream);
+//     }
+//     puts("xnuspy: found task_policy");
+//     return true;
+// }
