@@ -2392,10 +2392,14 @@ struct pf g_all_pfs[MAXPF][NUM_SUPPORTED_VERSIONS] = {
     {
         PF_DECL32("sysent_table finder iOS 13",
             LISTIZE({
-                0x794096b6, /* LDRH W22, [X21,#0x4A] */
-                0x321d07e8  /* MOV W8, #0x18 */
+                0xaa0003f4,  /* MOV             X20, X0 */
+                0xf941e2d5,  /* LDR             X21, [X22,#0x3C0] */
+                0xf9422ac1,  /* LDR             X1, [X22,#0x450] */
+                0x794096b6   /* LDRH            W22, [X21,#0x4A] */
             }),
             LISTIZE({
+                0xffffffff,     /* match exactly */
+                0xffffffff,     /* match exactly */
                 0xffffffff,     /* match exactly */
                 0xffffffff      /* match exactly */
             }),
@@ -2499,20 +2503,28 @@ struct pf g_all_pfs[MAXPF][NUM_SUPPORTED_VERSIONS] = {
         PF_UNUSED
     },
     {
+        /*
+        .driver.DiskImages.FileBackingStore:__text:FFFFFFF008A57FDC E0 03 16 AA                   MOV             X0, X22
+com.apple.driver.DiskImages.FileBackingStore:__text:FFFFFFF008A57FE0 E2 03 15 AA                   MOV             X2, X21
+        */
         PF_DECL32("vnode_getfromfd finder iOS 13",
             LISTIZE({ 
                 0x7100041f,      /* CMP W0, #1 */
                 0x5400040b,      /* B.LT loc_FFFFFFF008F9BD84 */
-                0x9102A000,      /* ADD Xn, Xn, #0xA8 */
-                0xaa0003e1,      /* MOV X1, X0 */
+                0x0,             /* ignore this instruction */
+                0x0,             /* ignore this instruction */
+                0xaa1603e0,      /* MOV X0, X22 */
+                0xaa1503e2,      /* MOV X2, X21 */
             }), 
             LISTIZE({
                 0xffffffff,     /* match exactly */
                 0xffffffff,     /* match exactly */
-                0xfffffc00,     /* ignore rd rn */
+                0x0,            /* ignore this instruction */
+                0x0,            /* ignore this instruction */
+                0xffffffff,     /* match exactly */
                 0xffffffff,     /* match exactly */
             }),
-            4, vnode_getfromfd_finder_13, "__TEXT_EXEC"),
+            6, vnode_getfromfd_finder_13, "__TEXT_EXEC"),
         PF_DECL_FULL("vnode_getfromfd finder iOS 14",
             LISTIZE({
                 0x7100041f,      /* CMP W0, #1 */

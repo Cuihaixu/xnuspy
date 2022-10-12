@@ -18,7 +18,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Tue Aug 30 10:46:29 2022
+# Make data base, printed on Wed Oct 12 13:55:34 2022
 
 # Variables
 
@@ -29,10 +29,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # environment
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
-MonkeyDevDeviceIP = 
+MonkeyDevDeviceIP = localhost
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
+ 
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
 # makefile (from `Makefile', line 9)
 TARGET = loader
@@ -49,7 +50,7 @@ CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/loader
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"78c842aaea601021948244dfecdb49b7.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/64bbfbf67ada9953918d72e1df2f4d8e537d340e","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 2)
@@ -67,7 +68,6 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
- 
 VSCODE_CWD = /Users/cu/Documents/Reverse/Source/xnuspy
 # environment
 PATH = /opt/MonkeyDev/bin:/opt/theos/bin/:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
@@ -86,7 +86,7 @@ LDFLAGS = -lusb-1.0
 # environment
 VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.iF6TcVi2BF/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -106,7 +106,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/64bbfbf67ada9953918d72e1df2f4d8e537d340e
 # environment
 LOGNAME = cu
 # environment
@@ -136,7 +136,7 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := loader
 # environment
-TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+TERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 LESS = -R
 # automatic
@@ -152,7 +152,7 @@ TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.72.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -164,7 +164,7 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.4.16
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12616824.12616830.A8E88A85-D118-4D61-95D5-94214F01662E
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -174,13 +174,15 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+ITERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
 COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+MonkeyDevDevicePort = 2222
 # environment
 COMMAND_MODE = unix2003
 # default
@@ -210,13 +212,15 @@ MAKELEVEL := 1
 # environment
 THEOS = /opt/theos
 # environment
+MonkeyDevDevicePassword = alpine
+# environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4919
+VSCODE_PID = 79079
 # variable set hash-table stats:
-# Load=96/1024=9%, Rehash=0, Collisions=3/125=2%
+# Load=98/1024=10%, Rehash=0, Collisions=3/127=2%
 
 # Pattern-specific Variable Values
 
@@ -224,10 +228,9 @@ VSCODE_PID = 4919
 
 # Directories
 
-# . (device 16777231, inode 6993208): 6 files, no impossibilities.
+# . (device 16777229, inode 6993208): 7 files, no impossibilities.
 
- 
-# 6 files, no impossibilities in 1 directories.
+# 7 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -289,9 +292,8 @@ loader.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 10:46:29 2022
+# Finished Make data base on Wed Oct 12 13:55:34 2022
 
- 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C module
  
 # GNU Make 3.81
@@ -313,19 +315,19 @@ loader.c:
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Tue Aug 30 10:46:30 2022
+# Make data base, printed on Wed Oct 12 13:55:34 2022
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
+ 
 ?F = $(notdir $?)
 # environment
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
-MonkeyDevDeviceIP = 
+MonkeyDevDeviceIP = localhost
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
@@ -345,11 +347,11 @@ CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/module/common
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"78c842aaea601021948244dfecdb49b7.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/64bbfbf67ada9953918d72e1df2f4d8e537d340e","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # environment
-CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include
+CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include
 # environment
 THEOS_DEVICE_IP = localhost -p 2222
 # makefile (from `Makefile', line 1)
@@ -377,9 +379,9 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
-SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.iF6TcVi2BF/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -399,7 +401,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/64bbfbf67ada9953918d72e1df2f4d8e537d340e
 # environment
 LOGNAME = cu
 # environment
@@ -429,7 +431,7 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+TERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 LESS = -R
 # automatic
@@ -445,19 +447,20 @@ TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.72.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
 MAKEFLAGS = Rrqp
 # environment
 MFLAGS = -Rrqp
+ 
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
 TERM_PROGRAM_VERSION = 3.4.16
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12616824.12616830.A8E88A85-D118-4D61-95D5-94214F01662E
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -467,14 +470,15 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+ITERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
- 
 # environment
 COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+MonkeyDevDevicePort = 2222
 # environment
 COMMAND_MODE = unix2003
 # default
@@ -504,13 +508,15 @@ MAKELEVEL := 2
 # environment
 THEOS = /opt/theos
 # environment
+MonkeyDevDevicePassword = alpine
+# environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4919
+VSCODE_PID = 79079
 # variable set hash-table stats:
-# Load=95/1024=9%, Rehash=0, Collisions=4/123=3%
+# Load=97/1024=9%, Rehash=0, Collisions=4/125=3%
 
 # Pattern-specific Variable Values
 
@@ -518,7 +524,7 @@ VSCODE_PID = 4919
 
 # Directories
 
-# . (device 16777231, inode 6993214): 7 files, no impossibilities.
+# . (device 16777229, inode 6993214): 7 files, no impossibilities.
 
 # 7 files, no impossibilities in 1 directories.
 
@@ -603,7 +609,6 @@ common.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
 #  Implicit rule search has not been done.
@@ -629,7 +634,7 @@ asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 10:46:30 2022
+# Finished Make data base on Wed Oct 12 13:55:34 2022
 
  
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C el1
@@ -653,11 +658,10 @@ asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Tue Aug 30 10:46:30 2022
+# Make data base, printed on Wed Oct 12 13:55:34 2022
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -665,8 +669,9 @@ asm.o: asm.c /Users/cu/Documents/Reverse/Source/xnuspy/include/asm/asm.h
 # environment
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
-MonkeyDevDeviceIP = 
+MonkeyDevDeviceIP = localhost
 # environment
+ 
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
@@ -687,11 +692,11 @@ CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/module/el1/xnuspy_ctl
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"78c842aaea601021948244dfecdb49b7.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/64bbfbf67ada9953918d72e1df2f4d8e537d340e","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 8)
-CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum
+CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include -mkernel -Wswitch-enum
 # environment
 THEOS_DEVICE_IP = localhost -p 2222
 # makefile (from `Makefile', line 1)
@@ -725,9 +730,9 @@ LDFLAGS = -Xlinker -kext
 # environment
 VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
-SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.iF6TcVi2BF/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -747,7 +752,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/64bbfbf67ada9953918d72e1df2f4d8e537d340e
 # environment
 LOGNAME = cu
 # environment
@@ -777,7 +782,7 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+TERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 LESS = -R
 # automatic
@@ -793,7 +798,7 @@ TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.72.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -806,7 +811,7 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.4.16
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12616824.12616830.A8E88A85-D118-4D61-95D5-94214F01662E
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -816,13 +821,15 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+ITERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
 COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+MonkeyDevDevicePort = 2222
 # environment
 COMMAND_MODE = unix2003
 # default
@@ -852,13 +859,15 @@ MAKELEVEL := 3
 # environment
 THEOS = /opt/theos
 # environment
+MonkeyDevDevicePassword = alpine
+# environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4919
+VSCODE_PID = 79079
 # variable set hash-table stats:
-# Load=99/1024=10%, Rehash=0, Collisions=5/173=3%
+# Load=101/1024=10%, Rehash=0, Collisions=5/175=3%
 
 # Pattern-specific Variable Values
 
@@ -866,7 +875,7 @@ VSCODE_PID = 4919
 
 # Directories
 
-# . (device 16777231, inode 6993222): 20 files, no impossibilities.
+# . (device 16777229, inode 6993222): 20 files, no impossibilities.
 
 # 20 files, no impossibilities in 1 directories.
 
@@ -923,7 +932,7 @@ wrappers.c:
 # Not a target:
 xnuspy_ctl.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-29 16:13:25
+#  Last modified 2022-09-15 20:01:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -955,7 +964,7 @@ Makefile:
 
 libc.o: libc.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/libc.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-29 16:07:40
+#  Last modified 2022-09-15 20:03:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -966,7 +975,7 @@ libc.o: libc.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/libc
 
 debug.o: debug.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/debug.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-29 16:07:40
+#  Last modified 2022-09-15 20:03:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -978,7 +987,7 @@ debug.o: debug.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/de
 # Not a target:
 /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-29 15:29:44
+#  Last modified 2022-09-15 20:03:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1000,11 +1009,12 @@ debug.o: debug.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/de
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 pte.o: pte.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/pte.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-29 16:07:40
+#  Last modified 2022-09-15 20:03:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1015,7 +1025,7 @@ pte.o: pte.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/pte.h 
 
 mem.o: mem.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/mem.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-29 16:07:40
+#  Last modified 2022-09-15 20:03:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1066,10 +1076,9 @@ debug.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 utils.o: utils.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/utils.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-29 16:07:40
+#  Last modified 2022-09-15 20:03:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1080,7 +1089,7 @@ utils.o: utils.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/ut
 
 wrappers.o: wrappers.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/wrappers.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-29 16:07:40
+#  Last modified 2022-09-15 20:03:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1100,7 +1109,7 @@ pte.c:
 
 xnuspy_ctl: debug.o libc.o mem.o pte.o tramp.o utils.o wrappers.o ../../common/asm.o /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h xnuspy_ctl.c
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-29 16:13:46
+#  Last modified 2022-09-15 20:03:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1121,7 +1130,7 @@ mem.c:
 
 tramp.o: tramp.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/tramp.h ../../common/asm.o /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/externs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_ctl.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-29 16:07:40
+#  Last modified 2022-09-15 20:03:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1179,11 +1188,11 @@ tramp.o: tramp.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/tr
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 10:46:30 2022
+# Finished Make data base on Wed Oct 12 13:55:34 2022
 
  
 
-# Make data base, printed on Tue Aug 30 10:46:30 2022
+# Make data base, printed on Wed Oct 12 13:55:34 2022
 
 # Variables
 
@@ -1194,8 +1203,9 @@ tramp.o: tramp.c /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/tr
 # environment
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
-MonkeyDevDeviceIP = 
+MonkeyDevDeviceIP = localhost
 # environment
+ 
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 _VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
@@ -1214,11 +1224,11 @@ CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/module/el1
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"78c842aaea601021948244dfecdb49b7.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/64bbfbf67ada9953918d72e1df2f4d8e537d340e","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # environment
-CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include
+CFLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk -arch arm64 -Wno-string-plus-int -fno-stack-protector -Wno-shorten-64-to-32 -D_FORTIFY_SOURCE=0 -nostdlib -DXNUSPY_PRIVATE -I/Users/cu/Documents/Reverse/Source/xnuspy/include
 # environment
 THEOS_DEVICE_IP = localhost -p 2222
 # makefile (from `Makefile', line 1)
@@ -1248,9 +1258,9 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
-SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+SDK = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.iF6TcVi2BF/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -1270,7 +1280,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/64bbfbf67ada9953918d72e1df2f4d8e537d340e
 # environment
 LOGNAME = cu
 # environment
@@ -1288,6 +1298,7 @@ XPC_FLAGS = 0x0
 # environment
 COLORTERM = truecolor
 # default
+ 
 MAKE = $(MAKE_COMMAND)
 # environment
 LC_TERMINAL = iTerm2
@@ -1302,7 +1313,7 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+TERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 LESS = -R
 # automatic
@@ -1318,7 +1329,7 @@ TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.72.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -1330,7 +1341,7 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.4.16
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12616824.12616830.A8E88A85-D118-4D61-95D5-94214F01662E
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -1340,13 +1351,15 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+ITERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
 COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+MonkeyDevDevicePort = 2222
 # environment
 COMMAND_MODE = unix2003
 # default
@@ -1376,13 +1389,15 @@ MAKELEVEL := 2
 # environment
 THEOS = /opt/theos
 # environment
+MonkeyDevDevicePassword = alpine
+# environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4919
+VSCODE_PID = 79079
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=8/135=6%
+# Load=99/1024=10%, Rehash=0, Collisions=8/137=6%
 
 # Pattern-specific Variable Values
 
@@ -1390,9 +1405,9 @@ VSCODE_PID = 4919
 
 # Directories
 
-# . (device 16777231, inode 6993218): 11 files, no impossibilities.
-# /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy (device 16777231, inode 6993189): 6 files, no impossibilities so far.
-# /Users/cu/Documents/Reverse/Source/xnuspy/include/asm (device 16777231, inode 6993172): 3 files, no impossibilities so far.
+# . (device 16777229, inode 6993218): 11 files, no impossibilities.
+# /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy (device 16777229, inode 6993189): 6 files, no impossibilities so far.
+# /Users/cu/Documents/Reverse/Source/xnuspy/include/asm (device 16777229, inode 6993172): 3 files, no impossibilities so far.
 
 # 20 files, no impossibilities in 3 directories.
 
@@ -1407,6 +1422,7 @@ VSCODE_PID = 4919
 	
 
 # 1 implicit rules, 0 (0.0%) terminal.
+ 
 
 # Files
 
@@ -1428,7 +1444,6 @@ hook_system_check_sysctlbyname_hook.s:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 all: /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hook_system_check_sysctlbyname_hook_instrs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/xnuspy_ctl_tramp_instrs.h target_dirs
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -1562,6 +1577,7 @@ xnuspy_ctl:
 # automatic
 # ? := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=2/13=15%
 #  commands to execute (from `Makefile', line 18):
 	$(MAKE) -C $@
@@ -1580,25 +1596,25 @@ xnuspy_ctl:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 10:46:30 2022
+# Finished Make data base on Wed Oct 12 13:55:34 2022
 
  
 make[1]: *** [el1] Error 1
 
 
-# Make data base, printed on Tue Aug 30 10:46:30 2022
+# Make data base, printed on Wed Oct 12 13:55:34 2022
 
 # Variables
 
- 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
-MonkeyDevDeviceIP = 
+MonkeyDevDeviceIP = localhost
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
@@ -1616,7 +1632,7 @@ CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy/module
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"78c842aaea601021948244dfecdb49b7.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/64bbfbf67ada9953918d72e1df2f4d8e537d340e","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 5)
@@ -1656,7 +1672,7 @@ VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # makefile (from `Makefile', line 1)
 SDK = $(shell xcrun --sdk iphoneos --show-sdk-path)
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.iF6TcVi2BF/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -1676,10 +1692,11 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/64bbfbf67ada9953918d72e1df2f4d8e537d340e
 # environment
 LOGNAME = cu
 # environment
+ 
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /Users/cu/.oh-my-zsh
@@ -1708,11 +1725,10 @@ USER = cu
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+TERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 LESS = -R
 # automatic
- 
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
@@ -1725,7 +1741,7 @@ TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.72.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -1737,7 +1753,7 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.4.16
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12616824.12616830.A8E88A85-D118-4D61-95D5-94214F01662E
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -1747,13 +1763,15 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+ITERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
 COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+MonkeyDevDevicePort = 2222
 # environment
 COMMAND_MODE = unix2003
 # default
@@ -1785,23 +1803,26 @@ MAKELEVEL := 1
 # environment
 THEOS = /opt/theos
 # environment
+MonkeyDevDevicePassword = alpine
+# environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4919
+VSCODE_PID = 79079
 # variable set hash-table stats:
-# Load=99/1024=10%, Rehash=0, Collisions=10/184=5%
+# Load=101/1024=10%, Rehash=0, Collisions=10/186=5%
 
 # Pattern-specific Variable Values
+ 
 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 16777231, inode 6993211): 13 files, no impossibilities.
+# . (device 16777229, inode 6993211): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -1897,7 +1918,6 @@ el1:
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=2/25=8%
 #  commands to execute (from `Makefile', line 23):
- 
 	$(MAKE) -C $@
 	
 
@@ -1934,6 +1954,7 @@ preboot_hook.c:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 # Not a target:
 /Users/cu/Documents/Reverse/Source/xnuspy/include/common/common.h:
 #  Implicit rule search has not been done.
@@ -2029,6 +2050,7 @@ common/asm.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 preboot_hook.o: /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hook_system_check_sysctlbyname_hook_instrs.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/xnuspy_ctl_tramp_instrs.h preboot_hook.c /Users/cu/Documents/Reverse/Source/xnuspy/include/common/preboot_hook.h /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/xnuspy_structs.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -2050,25 +2072,25 @@ preboot_hook.o: /Users/cu/Documents/Reverse/Source/xnuspy/include/xnuspy/el1/hoo
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 10:46:30 2022
+# Finished Make data base on Wed Oct 12 13:55:34 2022
 
  
 make: *** [module] Error 2
 
 
-# Make data base, printed on Tue Aug 30 10:46:30 2022
+# Make data base, printed on Wed Oct 12 13:55:34 2022
 
 # Variables
 
-# automatic
  
+# automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
 VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
 # environment
-MonkeyDevDeviceIP = 
+MonkeyDevDeviceIP = localhost
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
@@ -2086,7 +2108,7 @@ CURDIR := /Users/cu/Documents/Reverse/Source/xnuspy
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"78c842aaea601021948244dfecdb49b7.zh-cn","_translationsConfigFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/tcf.json","_cacheRoot":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/64bbfbf67ada9953918d72e1df2f4d8e537d340e","_corruptedFile":"/Users/cu/Library/Application Support/Code/clp/78c842aaea601021948244dfecdb49b7.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # environment
@@ -2116,7 +2138,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VIRTUALENVWRAPPER_HOOK_DIR = /Users/cu/Programs/PythonEnvs
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o6cZuEs6vB/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.iF6TcVi2BF/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -2136,7 +2158,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /Users/cu/Library/Application Support/Code/CachedData/64bbfbf67ada9953918d72e1df2f4d8e537d340e
 # environment
 LOGNAME = cu
 # environment
@@ -2168,7 +2190,7 @@ USER = cu
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+TERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 LESS = -R
 # automatic
@@ -2184,8 +2206,9 @@ TMPDIR = /var/folders/cz/dg0w3cwx5h7gbjmk_6pnc11m0000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.70.2-main.sock
+VSCODE_IPC_HOOK = /Users/cu/Library/Application Support/Code/1.72.0-main.sock
 # environment
+ 
 MallocNanoZone = 0
 # makefile
 MAKEFLAGS = Rrqp
@@ -2194,10 +2217,9 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
- 
 TERM_PROGRAM_VERSION = 3.4.16
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6656062.6656068.DC152048-7909-4090-8E25-6886CC8ED71B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12616824.12616830.A8E88A85-D118-4D61-95D5-94214F01662E
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -2207,13 +2229,15 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t3p0:E33A982C-4659-4B4D-8EED-F508E2D2460D
+ITERM_SESSION_ID = w0t0p0:6D55E062-932D-4BCC-8CF4-C21D11DF9B2C
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
 COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
+# environment
+MonkeyDevDevicePort = 2222
 # environment
 COMMAND_MODE = unix2003
 # default
@@ -2243,13 +2267,15 @@ MAKELEVEL := 0
 # environment
 THEOS = /opt/theos
 # environment
+MonkeyDevDevicePassword = alpine
+# environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4919
+VSCODE_PID = 79079
 # variable set hash-table stats:
-# Load=93/1024=9%, Rehash=0, Collisions=9/133=7%
+# Load=95/1024=9%, Rehash=0, Collisions=9/135=7%
 
 # Pattern-specific Variable Values
 
@@ -2257,7 +2283,7 @@ VSCODE_PID = 4919
 
 # Directories
 
-# . (device 16777231, inode 6993087): 10 files, no impossibilities.
+# . (device 16777229, inode 6993087): 10 files, no impossibilities.
 
 # 10 files, no impossibilities in 1 directories.
 
@@ -2360,9 +2386,9 @@ loader:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 # files hash-table stats:
 # Load=7/1024=1%, Rehash=0, Collisions=0/28=0%
- 
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -2374,6 +2400,6 @@ loader:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 10:46:30 2022
+# Finished Make data base on Wed Oct 12 13:55:34 2022
 
  
