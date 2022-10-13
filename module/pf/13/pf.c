@@ -1414,7 +1414,7 @@ bool sysent_table_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
 bool vfs_context_current_finder_13(xnu_pf_patch_t *patch, void *cacheable_stream) {
     xnu_pf_disable_patch(patch);
     uint32_t *opcode_stream = cacheable_stream;
-    uint32_t *vfs_context_current = get_branch_dst_ptr(opcode_stream + 1);
+    uint32_t *vfs_context_current = get_branch_dst_ptr(opcode_stream + 2);
     g_vfs_context_current = xnu_ptr_to_va(vfs_context_current);
     puts("xnuspy: found vfs_context_current()");
     return true;
