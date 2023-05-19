@@ -111,6 +111,7 @@ extern uint64_t g_vfs_context_current;
 extern uint64_t g_vn_getpath;
 extern uint64_t g_vnode_put;
 extern uint64_t g_vnode_getfromfd;
-extern uint64_t g_task_policy;
+extern uint64_t g_vnode_lookup;
+// extern uint64_t g_task_policy;
 
 #endif

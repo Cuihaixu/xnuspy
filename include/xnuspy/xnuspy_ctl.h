@@ -478,6 +478,12 @@ enum {
      */ 
     VNODE_GET_FROM_FD,
 
+    /* errno_t vnode_lookup(const char *path, int flags, vnode_t *vpp, vfs_context_t ctx)
+     * 
+     * vnode_lookup
+     */
+    VNODE_LOOKUP,
+
     // /* int64_t task_policy(void *ucred, void *ident)
     //  */
     // TASK_POLICY,

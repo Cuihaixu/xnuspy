@@ -10,3 +10,7 @@ all : $(TARGET_DIRS)
 
 $(TARGET_DIRS) :
 	$(MAKE) -C $@
+
+clean : $(TARGET_DIRS) 
+.PHONY : clean $(TARGET_DIRS)
+	[tab]-rm main $(variable)

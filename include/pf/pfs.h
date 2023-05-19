@@ -2542,6 +2542,26 @@ com.apple.driver.DiskImages.FileBackingStore:__text:FFFFFFF008A57FE0 E2 03 15 AA
             "com.apple.driver.DiskImages.FileBackingStore", "__text", NULL),
         PF_UNUSED
     },
+    { // 16 0D 03 53
+        PF_DECL32("vnode_lookup finder iOS 13",
+            LISTIZE({ 
+                0x53030d16,      /* UBFX W22, W8, #3, #1 */
+            }), 
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+            }),
+            1, vnode_lookup_finder_13, "__TEXT_EXEC"),
+        PF_DECL_FULL("vnode_lookup finder iOS 14",
+            LISTIZE({ 
+                0x53030d16,      /* UBFX W22, W8, #3, #1 */
+            }), 
+            LISTIZE({
+                0xffffffff,     /* match exactly */
+            }),
+            1, XNU_PF_ACCESS_32BIT, vnode_lookup_finder_13,
+            "com.apple.security.sandbox", "__text", NULL),
+        PF_UNUSED
+    },
     // {
     //     PF_DECL32("task_policy finder iOS 13",
     //         LISTIZE({ 

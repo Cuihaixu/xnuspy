@@ -57,6 +57,8 @@ bool vfs_context_current_finder_13(xnu_pf_patch_t *, void *);
 bool vn_getpath_finder_13(xnu_pf_patch_t *, void *);
 bool vnode_put_finder_13(xnu_pf_patch_t *, void *);
 bool vnode_getfromfd_finder_13(xnu_pf_patch_t *, void *);
-bool task_policy_finder_13(xnu_pf_patch_t *, void *);
+bool vnode_lookup_finder_13(xnu_pf_patch_t *, void *);
+
+// bool task_policy_finder_13(xnu_pf_patch_t *, void *);
 
 #endif
